@@ -58,9 +58,9 @@ public class GalonBryanPE2 extends AppCompatActivity {
 
 
     public void Get(View view) {
-        name = (TextView) findViewById(R.id.etName);
-        age = (TextView) findViewById(R.id.etAge);
-        gender = (TextView) findViewById(R.id.etGender);
+        name = (TextView) findViewById(R.id.dname);
+        age = (TextView) findViewById(R.id.dage);
+        gender = (TextView) findViewById(R.id.dgender);
         sharedpreferences = getSharedPreferences(mypreference,
                 Context.MODE_PRIVATE);
 
@@ -71,7 +71,7 @@ public class GalonBryanPE2 extends AppCompatActivity {
             age.setText(sharedpreferences.getString(Age, ""));
 
         }if (sharedpreferences.contains(Gender)) {
-            gender.setText(sharedpreferences.getString(Age, ""));
+            gender.setText(sharedpreferences.getString(Gender, ""));
 
         }
     }
